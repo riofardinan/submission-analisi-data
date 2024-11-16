@@ -5,7 +5,7 @@ import seaborn as sns
 
 st.title("Dashboard Kualitas Udara dan Curah Hujan di Stasiun Guanyuan")
 
-air_quality_df = pd.read_csv("main_data.csv")
+air_quality_df = pd.read_csv("dashboard\main_data.csv")
 
 st.header("Trend Kualitas Udara")
 st.write("Visualisasi tren kualitas udara berdasarkan parameter PM2.5, PM10, SO2, NO2, O3, dan CO.")
