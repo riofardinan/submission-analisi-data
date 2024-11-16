@@ -1,22 +1,30 @@
-# Proyek Analisis Data Dicoding
+# Submission Analisis Data Dicoding
+Analisa kualitas udara di stasiun Guanyuan
 
-## Setup Environment - Anaconda
+## Instalasi
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini:
+
+### Clone repository
 ```
-conda create --name main-ds python=3.9
-conda activate main-ds
+git clone https://github.com/riofardinan/submission-analisis-data.git
+```
+
+### Masuk ke folder proyek
+```
+cd submission-analisis-data
+```
+
+### Setup Environment
+```
 pip install -r requirements.txt
 ```
 
-## Setup Environment - Shell/Terminal
+### Run steamlit
+Masuk ke direktori
 ```
-mkdir proyek_analisis_data
-cd proyek_analisis_data
-pipenv install
-pipenv shell
-pip install -r requirements.txt
+cd dashboard
 ```
-
-## Run steamlit app
+Jalankan Streamlit
 ```
 streamlit run dashboard.py
 ```
