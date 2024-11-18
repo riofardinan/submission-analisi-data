@@ -105,7 +105,7 @@ stations_coordinates = {
 
 st.header("Sebaran Kualitas Udara di Beijing")
 st.markdown("""
-Dashboard ini menampilkan peta interaktif stasiun pengukuran kualitas udara di Beijing,
+Peta interaktif stasiun pengukuran kualitas udara di Beijing,
 dengan indikator rata-rata nilai PM2.5 per stasiun.
 """)
 
@@ -132,5 +132,4 @@ for station, lat, lon, pm25 in station_data:
 heat_data = [[lat, lon, pm25] for _, lat, lon, pm25 in station_data]
 HeatMap(heat_data).add_to(map_beijing)
 
-st.markdown("### Peta Interaktif Kualitas Udara")
 st_folium(map_beijing, width=800, height=600)
